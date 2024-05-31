@@ -6,7 +6,6 @@ public class Coche {
     private String garaje;
     private Agencia agencia;
 
-
     public String getMatricula() { return matricula; }
     public void setMatricula(String matricula) { this.matricula = matricula; }
 
@@ -32,11 +31,6 @@ public class Coche {
         this.marca = marca;
         this.garaje = garaje;
         this.agencia = agencia;
-    }
-
-
-    public void asignarACliente(Cliente cliente) {
-
     }
 
     @Override

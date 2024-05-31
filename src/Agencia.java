@@ -7,7 +7,6 @@ public class Agencia {
     private List<Coche> listaCoches;
     private List<Reserva> listaReservas;
 
-
     public String getNombre() { return nombre; }
     public void setNombre(String nombre) { this.nombre = nombre; }
 
@@ -29,11 +28,6 @@ public class Agencia {
         this.listaClientes = new ArrayList<>();
         this.listaCoches = new ArrayList<>();
         this.listaReservas = new ArrayList<>();
-    }
-
-
-    public void registrarAgencia() {
-
     }
 
     @Override

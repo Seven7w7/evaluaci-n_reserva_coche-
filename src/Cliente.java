@@ -7,7 +7,7 @@ public class Cliente {
     private String telefono;
     private String codigoUnico;
     private Cliente clienteAvalador;
-
+    private List<Reserva> reservas;
 
     public String getDNI() { return DNI; }
     public void setDNI(String DNI) { this.DNI = DNI; }
@@ -27,17 +27,20 @@ public class Cliente {
     public Cliente getClienteAvalador() { return clienteAvalador; }
     public void setClienteAvalador(Cliente clienteAvalador) { this.clienteAvalador = clienteAvalador; }
 
+    public List<Reserva> getReservas() { return reservas; }
+    public void setReservas(List<Reserva> reservas) { this.reservas = reservas; }
+
     public Cliente(String DNI, String nombre, String direccion, String telefono, String codigoUnico) {
         this.DNI = DNI;
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
         this.codigoUnico = codigoUnico;
+        this.reservas = new ArrayList<>();
     }
 
-
     public void realizarReserva(Reserva reserva) {
-
+        this.reservas.add(reserva);
     }
 
     @Override
