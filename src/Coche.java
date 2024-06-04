@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Coche {
     private String matricula;
     private String modelo;
@@ -35,6 +37,13 @@ public class Coche {
 
     @Override
     public String toString() {
-        return "Coche{" + "matricula=" + matricula + ", modelo=" + modelo + ", color=" + color + ", marca=" + marca + ", garaje=" + garaje + ", agencia=" + agencia + '}';
+        return "Coche{" +
+                "matricula='" + matricula + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", color='" + color + '\'' +
+                ", marca='" + marca + '\'' +
+                ", garaje='" + garaje + '\'' +
+                ", agencia=" + agencia +
+                '}';
     }
 }

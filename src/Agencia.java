@@ -32,6 +32,12 @@ public class Agencia {
 
     @Override
     public String toString() {
-        return "Agencia{" + "nombre=" + nombre + ", direccion=" + direccion + ", listaClientes=" + listaClientes + ", listaCoches=" + listaCoches + ", listaReservas=" + listaReservas + '}';
+        return "Agencia{" +
+                "nombre='" + nombre + '\'' +
+                ", direccion='" + direccion + '\'' +
+                ", listaClientes=" + listaClientes +
+                ", listaCoches=" + listaCoches +
+                ", listaReservas=" + listaReservas +
+                '}';
     }
 }
